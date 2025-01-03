@@ -25,7 +25,7 @@ export SOCKSP=${SOCKSP:-'allforone'}
 export TUIC_PORT=${TUIC_PORT:-'33052'}
 export HY2_PORT=${HY2_PORT:-'44052'}
 export CFIP=${CFIP:-'www.visa.com.tw'} 
-export CFPORT=${CFPORT:-'443'} 
+export CFPORT=${CFPORT:-'2096'} 
 
 [[ "$HOSTNAME" == "s1.ct8.pl" ]] && WORKDIR="domains/${USERNAME}.ct8.pl/logs" || WORKDIR="domains/${USERNAME}.serv00.net/logs"
 [ -d "$WORKDIR" ] || (mkdir -p "$WORKDIR" && chmod 777 "$WORKDIR")
@@ -352,10 +352,10 @@ EOF
 cat list.txt
 purple "\n$WORKDIR/list.txt saved successfully"
 purple "Running done!"
-yellow "这是Serv00 S14 S15专用的魔改老王四合一脚本(socks5|vmess-ws-tls(argo)|hysteria2|tuic)\n"
-echo -e "${green}解决的问题：${re}${yellow}S14不能正常播放YouTube，S15不能正常播放Twitch的问题${re}\n"
-echo -e "${green}反馈：${re}${yellow}不要去找老王就行，魔改没有售后${re}\n"
-echo -e "${green}TG反馈：${re}${yellow}你可以在https://t.me/CMLiussss里找到我 @RealNeoMan${re}\n"
+yellow "Serv00 S14 S15魔改老王四合一脚本(socks5|vmess-ws-tls(argo)|hysteria2|tuic)\n"
+echo -e "${green}解决的问题：${re}${yellow}S14-S15${re}\n"
+echo -e "${green}_：${re}${yellow}_${re}\n"
+echo -e "${green}TG：${re}${yellow}test${re}\n"
 purple "转载请著名出处，请勿滥用\n"
 sleep 3 
 rm -rf boot.log config.json sb.log core tunnel.yml tunnel.json fake_useragent_0.2.0.json
